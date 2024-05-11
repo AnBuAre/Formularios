@@ -1,25 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularios de Club y Robo</title>
 </head>
 <body>
-    <h1>Club de la tercera edad</h1>
-    <br>
-    <br>
-    <h3>TÚ</h3>
-    <form>
-       <p><label for = "nombre"> Nombre: </label>
-        <input type= "text" id="nombre" name="nombre" ></p> 
 
-        <p><label for="apellidos"> Apellidos: </label>
-            <input type="text" id="apellidos" name="apellidos"><br><p>
+    
+    <form id="club-tercera-edad">
+        <h2>Club de la tercera edad</h2>
 
-        <p><label for="edad"> Edad: </label><input type="number" id="edad" name="edad"></p>
-        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" placeholder="Introduce tu edad" required><br><br>
+
+        <p>Sexo:</p>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="sexo" value="femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <input type="checkbox" id="me-siento-viejuner" name="me-siento-viejuner">
+        <label for="me-siento-viejuner">Me siento viejuner</label><br><br>
+
+        <label for="sobre-ti">Escribe algo sobre ti:</label>
+        <textarea id="sobre-ti" name="sobre-ti" rows="4" cols="50" placeholder="Describe algo sobre ti"></textarea><br><br>
+
+        <label for="correo-electronico">Correo electrónico:</label>
+        <input type="email" id="correo-electronico" name="correo-electronico" placeholder="Introduce tu correo" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu teléfono" required><br><br>
+
+        <input type="submit" value="Enviar">
     </form>
 
+    <hr>
+
+    <!-- Formulario: Robo de bicicleta -->
+    <form id="robo-bicicleta">
+        <h2>Robo de bicicleta</h2>
+
+        <label for="dia">Día:</label>
+        <input type="date" id="dia" name="dia" required><br><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+
+        <label for="color-bicicleta">Color de la bicicleta:</label>
+        <input type="color" id="color-bicicleta" name="color-bicicleta"><br><br>
+
+        <label for="rango-precio">Rango de precio:</label>
+        <input type="range" id="rango-precio" name="rango-precio" min="0" max="10000"><br><br>
+
+        <label for="tipo-bicicleta">Tipo de bicicleta:</label>
+        <select id="tipo-bicicleta" name="tipo-bicicleta">
+            <option value="paseo">Paseo</option>
+            <option value="senorial">Señorial</option>
+            <option value="anti-plebeyos">Anti-plebeyos</option>
+            <option value="porencimadelhombro">PorEncimaDelHombro</option>
+            <option value="montana">Montaña</option>
+            <option value="gamusinos">Gamusinos</option>
+            <option value="hueleflores-premium">Hueleflores premium</option>
+            <option value="fango-lover">Fango lover</option>
+            <option value="carreras">Carreras</option>
+            <option value="metroymedio">Metroymedio</option>
+            <option value="3-tarde-fluorescente">3 de la tarde (fluorescente edition)</option>
+            <option value="grupitors">Grupitors</option>
+        </select><br><br>
+
+        <label for="accesorios">Accesorios:</label>
+        <select id="accesorios" name="accesorios" multiple>
+            <option value="ruedines">Ruedines</option>
+            <option value="pegatinas">Pegatinas</option>
+            <option value="cestita">Cestita</option>
+            <option value="bomba-aire">Bomba de aire</option>
+            <option value="timbre">Timbre</option>
+            <option value="foco">Foco</option>
+        </select><br><br>
+
+        <label for="marca-bicicleta">¿Qué marca era?:</label>
+        <datalist id="marca-lista">
+            <option value="specialized">
+            <option value="trek">
+            <option value="merida">
+            <option value="scott">
+            <option value="giant">
+            <option value="cube">
+        </datalist>
+        <input type="text" id="marca-bicicleta" name="marca-bicicleta" list="marca-lista" placeholder="Selecciona o escribe la marca"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+  
 </body>
 </html>
