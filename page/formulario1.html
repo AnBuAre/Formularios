@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <ul>
+        <li><a href="index.html">INDEX</a></li>
+        <li><a href="page/formulario2.html">formulario 2</a>
+        <li><a href="page/formulario3.html">formulario 3</a>
+        <li><a href="page/formulario4.html">formulario 4</a>
+        <li><a href="page/formulario5.html">formulario 5</a>
+    </ul>
    <fieldset>
     <legend>Rellene las siguientes opciones:</legend>
     <input type="radio" id="asignatura" name="asignatura" value="asignaturalengua">
@@ -52,10 +59,36 @@
 </fieldset> 
 <fieldset>
     <legend>Por favor, complete estas opciones</legend>
- <textare name="cuadro" rows="6" cols="45">
-    Utilice este recuadro porfavor
- </textare>
- 
+   
+    <textarea id="miTextarea" rows="6" cols="45">Rellene esto porfavor</textarea>
+
+   </p>
+   <label for="eligecolor">Elige un Color</label>
+   <input type="color" id="eligeColor" name="eligecolor"><br>
+   <p>
+    
+    <input type="radio" name="lenguaje" value="lenguajejava">
+    <label for="java">Java</label><br>
+    <input type="radio" name="lenguaje" value="lenguajepython">
+    <label form="python">Python</label><br>
+    <input type="radio" name="lenguaje" value="lenguajehtml">
+    <label for="html">HTML</label><br>
+    <input type="radio" name="lenguaje" value="lenguajevisual_basic">
+    <label for="visualbasic">Visual basic</label><br>
+    <input type="radio" name="lenguaje" value="lenguajecss">
+    <label for="java">CSS</label><br><br>
+<p>
+    <label for="nombre">Nombre</label><br>
+    <input type="text" name="nombre"><br><br>
+    <label for="apellido">Apellidos</label><br>
+    <input type="text" name="apellidos"><br><br>
+    <label for="email">E-mail</label><br>
+    <input type="email" name="email"><br><br>
+    <label for="tlf">Teléfono</label><br>
+    <input type="number" name="telefono">
+
+</p>
+
 </fieldset>
 </body>
 </html>
