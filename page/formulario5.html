@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/index.html">Index</a></li>
+        <li><a href="formulario1.html">Formulario 1</a></li>
+        <li><a href="formulario2.html">Formulario 2</a></li>
+        <li><a href="formulario3.html">Formulario 3</a></li>
+        <li><a href="formulario4.html">Formulario 4</a></li>
+        
+    </ul>
+    <fieldset>
+        <legend>Complete,por favor</legend>
+        <label for="hora">Elija una hora:</label>
+        <input type="time" id="hora" name="hora" required><br>
+        <textarea id ="texto" rows="6" cols="45"> Escriba aquí, por favor</textarea>
+        <br>
+        <input type="radio" name="lenguaje" value="lenguajejava">
+        <label for="java">Java</label><br>
+        <input type="radio" name="lenguaje" value="lenguajepython">
+        <label for="python">Python</label><br>
+        <input type="radio" name="lenguaje" value="lenguajehtml">
+        <label for="html">HTML</label><br>
+        <input type="radio" name="lenguaje"  value="lenguajevisual_basic">
+        <label for="visual_basic">Visual Basic</label>
+        <br>
+        <label for="elija">Elija un fichero:</label>
+        <input type="file" id="fila" name="fila">
+        <button type="button" onclick="mostrarArchivo()">Mostrar archivo seleccionado</button>
+        <br>
+        <label for="dia">Día:</label>
+        <input type="date" id="dia" name="dia" >
+        <br>
+        <label for="eligecolor">Elige un Color</label>
+        <input type="color" id="eligeColor" name="eligecolor"><br>
+
+    
+    </fieldset>
+    <fieldset>
+        <legend>Rellene las opciones siguientes</legend>
+        <input type="checkbox" name="procesador" value="procesadorintel">
+        <label for="intel">Intel</label><br>
+        <input type="checkbox" name="procesador" value="procesadoramd">
+        <label for="amd">AMD</label>
+        <br>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br>
+        <label for="elija">Elija un fichero:</label>
+        <input type="file" id="fila" name="fila">
+        <button type="button" onclick="mostrarArchivo()">Mostrar archivo seleccionado</button>
+        <br>
+        <input type="radio" name="procesador" value="procesadoramd">
+        <label for="amd">AMD</label>
+        <input type="radio" name="procesador" value="procesador_i5">
+        <label for="intel">Intel i5</label>
+        <input type="radio" name="procesador" value="procesadorintel_i7">
+        <label for="procesadori7">Intel i7</label>
+        <br>
+        <textarea id ="texto" rows="4" cols="55"> Utilice este recuadro, por favor</textarea>
+        <br>
+        <label for="dni">DNI</label>
+        <input type="text" name="dni">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+        <label for="apellido">Apellidos</label>
+        <input type="text" name="apellidos">
+        <label for="telefono">Teléfono</label>
+        <input type="number" name="telefono">
+        <br>
+        <label for="eligecolor">Elige un Color</label>
+        <input type="color" id="eligeColor" name="eligecolor"><br>
+
+
+    </fieldset>
+</body>
+</html>

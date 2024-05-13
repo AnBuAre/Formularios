@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/index.html"></a>HTML</li>
+        <li><a href="formulario1.html"></a>formulario 1</li>
+        <li><a href="formulario2.html"></a>Formulario 3</li>
+        <li><a href="formulario4.html"></a>Formulario 4</li>
+        <li><a href="formulario5.html"></a>Formulario 5</li>
+        
+    </ul>
+    <fieldset>
+        <legend>Opciones</legend>
+        <input type="radio" name="conexion" value="conexionwifi">
+        <label for="wifi">Wifi</label>
+        <input type="radio" name="conexion" value="conexioncable">
+        <label for="wifi">Cable</label>
+        <input type="radio" name="conexion" value="conexionfibra">
+        <label for="fibra">Fibra</label><br>
+
+        <label for="hora">Elija una hora:</label>
+        <input type="time" id="hora" name="hora" required><br>
+        <br>
+        <!--No puedo poner examinar-->
+        <label for="elija">Elija un fichero:</label>
+        <input type="file" id="fia" name="fila">
+        <button type="button" onclick="mostrarArchivo()">Mostrar archivo seleccionado</button>
+        <br>
+        <select name="preferencias" id="preferencias">
+            <option value="ciencias">Ciencias</option>
+            <option value="letras">letras</option>
+
+        </select>
+        <br><br>
+        <textarea id ="texto" rows="8" cols="45"> Escriba aquí, por favor</textarea>
+        <br>
+        <label for="dia">Día:</label>
+        <br>
+        <input type="date" id="dia" name="dia" >
+        <br>
+        <label for="USB">USB</label>
+        <input type="checkbox" name="conector" value="conectorusb">
+        <label for="paralelo">Paralelo</label>
+        <input type="checkbox" name="conector" value="conectorparalelo">
+        <label for="PS2">PS2</label>
+        <input type="checkbox" name="conector" value="conectorps2">
+        <br>
+        <label for="instituro">Instituto</label>
+        <input type="text" name="instituto">
+        <label for="estudioselegidos">Estudios elegidos</label>
+        <input type="text" name="estudios">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+        <label for="apellido">Apellidos</label>
+        <input type="text" name="apellido">
+        <label for="email">E-mail</label>
+        <input type="email" name="email">
+        <br>
+        <label for="eligecolor">Elige un Color</label>
+        <input type="color" id="eligeColor" name="eligecolor"><br>     
+        
+    </fieldset>
+    <fieldset>
+        <legend>Por favor, complete estas opciones</legend>
+        <label for="eligecolor">Elige un Color</label>
+        <input type="color" id="eligeColor" name="eligecolor"><br>
+        <input type="radio" name="procesador" value="procesadorintel">
+        <label for="intel">Intel</label>
+        <input type="radio" name="procesador" value="procesador"></input>
+        <label for="amd">AMD</label>
+        <br>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br>
+        <label for="elija">Elija un fichero:</label>
+        <input type="file" id="fia" name="fila">
+        <button type="button" onclick="mostrarArchivo()">Mostrar archivo seleccionado</button>
+        <br>
+        <select name="idioma" id="idioma">
+            <option value="ingles">Inglés</option>
+            <option value="aleman">Alemán</option>
+            <option value="frances">Francés</option>
+        </select>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+        <label for="apellido">Apellidos</label>
+        <input type="text" name="apellido">
+        <label for="email">E-mail</label>
+        <input type="text" name="email">
+        <label for="telefono">Teléfono</label>
+        <input type="number" name="telefono">
+        <br>
+        <input type="checkbox" name="provincia" value="provinciaalbacete">
+        <label for="albacete">Albacete</label>
+        <input type="checkbox" name="provincia" value="provinciaciudad_real">
+        <label for="ciudad_real">Ciudad Real</label>
+        <input type="checkbox" name="provincia" value="provinciacuenta">
+        <label for="cuenca">Cuenca</label>
+        <input type="checkbox" name="provincia" value="provinciaguadalajara">
+        <label for="guadalajara">Guadalajara</label>
+        <input type="checkbox" name="provincia" value="toledo">
+        <label for="toledo">Toledo</label>
+        <br>
+        <label for="hora">Elija una hora:</label>
+        <input type="time" id="hora" name="hora" required><br>
+        <textarea id ="texto" rows="8" cols="49"> Escriba aquí, por favor</textarea>
+
+
+        
+    </fieldset>
+</body>
+</html>
